@@ -28,7 +28,7 @@ if $ARGS[0]="":
 	'</div>'
 
 	'<div class="dialog_menu">'
-		'<p>·Due to the introduction of the new law, countless women have taken flights from all over the world to come here, and every woman can release her nature here.</p>'
+		'<p>·As a result of the new law, countless women have traveled by flight from all over the world to come here, where every woman can unleash her true nature.p>'
 		'<p>——————————</p>'
 		if $LXS.available=0:'<p>·Passenger plane on fire<a href="exec:gt ''airport'',''Passenger plane on fire''">View</a></p>'
 	'</div>'
@@ -44,10 +44,10 @@ if $ARGS[0]="Passenger plane on fire":
 	'</div>'
 
 	'<div class="dialog_menu">'
-		'<p>·LB615The flight failed twice due to unknown reasons, and contact with the tower has been lost.</p>'
-		'<p>·LB615For the content of the story, please visit the link below to download it separately↓No need to go over the wall, you can`t open it to change your browser</p>'
+		'<p>·Flight LB615 has lost contact with the tower after a double-engine failure for unknown reasons.</p>'
+		'<p>·For the rest of story on Flight LB615, please visit the link below to download it separately↓ No need for a VPN, if it doesn't open, try a different browser.</p>'
 		'<p><a href="https://airtable.com/appZwBEUmnRghFhgz/shrwhq3RAtOAfEDbo/tblnvavxTkHZgF3Vn"> https://airtable.com/appZwBEUmnRghFhgz/shrwhq3RAtOAfEDbo/tblnvavxTkHZgF3Vn</a></p>'
-		'<p>·Too lazy to play, you can also directly purchase the customs clearance code</p>'
+		'<p>·If you're too lazy to play, you can also just buy the pass code.</p>'
 	'</div>'
 End
 
@@ -58,12 +58,12 @@ if $ARGS[0]="Crew office":
         '</div>'
 		
 	'<div class="button_menu">'
-		'<div class="button"><a href="exec:minutes+=15 & gt ''Empire_Event'',''Empire_Fuck_Disguise''">Secretly investigate</a></div>'
+		'<div class="button"><a href="exec:minutes+=15 & gt ''Empire_Event'',''Empire_Fuck_Disguise''">Investigate in secret</a></div>'
 	'</div>'
 
 	'<div class="dialog_menu">'
-		'<p><<$QJ.NAME>>:  First of all, we need to understand the root causes of the decline in passenger satisfaction and service attitude. Everyone doesn`t know you. Please go and investigate in disguise.</p>'
-		'<p>I:  I got it</p>'
+		'<p><<$QJ.NAME>>:  First, we need to understand the root causes of the decline in passenger satisfaction and service quality. Since no one knows you, please go undercover and investigate.</p>'
+		'<p>Me: Got it.</p>'
 	'</div>'
 End
 
@@ -75,22 +75,22 @@ if $ARGS[0]="Crew office2":
         '</div>'
 		
 	'<div class="button_menu">'
-		'<div class="buttonG3"><a href="exec:minutes+=15 & gt ''Empire_Event'',''Empire_Fuck_Stewardesstraining''">recruit&training<<$Trainingprogress>>/3</a></div>'
-		if $Airportprogress>=4 and $Trainingprogress>=3:'<div class="buttonS"><a href="exec:gt ''Empire_Event'',''Empire_Fuck_Internally selected candidates''">Select candidates within the inspection<<Internalschedule>>/5</a></div>'
+		'<div class="buttonG3"><a href="exec:minutes+=15 & gt ''Empire_Event'',''Empire_Fuck_Stewardesstraining''">Recruitment & Training <<$Trainingprogress>>/3</a></div>'
+		if $Airportprogress>=4 and $Trainingprogress>=3:'<div class="buttonS"><a href="exec:gt ''Empire_Event'',''Empire_Fuck_Internally selected candidates''">Inspect the preselected candidates <<Internalschedule>>/5</a></div>'
 		if Internalschedule>=5:
 			if $times_of_day!'':'<div class="buttonS2"><a href="exec:$QJ.love+=1 & gt ''Empire_Event'',''Empire_Fuck_Take her home''">Take her home</a></div>'else'<div class="buttonGr"><a href="exec:">Wait for her to finish</a></div>'
-			if $QJ.bad>=100+my.charm*15:'<div class="buttonS"><a href="exec:gt ''Empire_Event'',''Empire_Fuck_Female office1''">Close the door and fuck her</a></div>'else'<div class="buttonGr"><a href="exec:">Insufficient depravity<<my.charm*15+100>></a></div>'
+			if $QJ.bad>=100+my.charm*15:'<div class="buttonS"><a href="exec:gt ''Empire_Event'',''Empire_Fuck_Female office1''">Close the door and fuck her</a></div>'else'<div class="buttonGr"><a href="exec:">Insufficient Depravity<<my.charm*15+100>></a></div>'
 		end
-		'<div class="button"><a href="exec:minutes+=15 & gt ''airport''">return</a></div>'
+		'<div class="button"><a href="exec:minutes+=15 & gt ''airport''">Return</a></div>'
 	'</div>'
 
 	'<div class="dialog_menu">'
-		'<p><<$QJ.NAME>>:  It seems that the meeting passed our proposal?Very good, then let`s start the next step.</p>'
-		'<p>I:  Please say.</p>'
-		'<p><<$QJ.NAME>>:  The first is to lay off flight attendants who are unwilling to provide sexual services.</p>'
-		'<p><<$QJ.NAME>>:  Secondly, recruit and train social women who are willing to work part-time.</p>'
-		'<p><<$QJ.NAME>>:  Finally, continuous unannounced visits to optimize the crew configuration, thereby improving passenger satisfaction and airline operating income.Through fine-grained staffing management, we can ensure that crew members can give full play to their advantages in different tasks and scenarios, provide excellent services and solutions, and win more praise and repeat customers for airlines.</p>'
-		if Internalschedule>=5:'<p>I:  It seems that things are almost done, and the satisfaction of passengers and the enthusiasm of the crew have increased significantly.</p>'
+		'<p><<$QJ.NAME>>:   seems the proposal was approved in the meeting? That's great. Let's move on to the next step.</p>'
+		'<p>Me: Please tell me what they are.</p>'
+		'<p><<$QJ.NAME>>: The first step is to lay off flight attendants who are unwilling to provide sexual favors.</p>'
+		'<p><<$QJ.NAME>>: Secondly, to recruit and train women in society who are willing to work part-time.</p>'
+		'<p><<$QJ.NAME>>: Finally, we continuously conduct covert inspections to optimize crew personnel assignments, thereby enhancing passenger satisfaction and the airline's operational revenue. Through precise personnel management, we can ensure that crew members can fully utilize their strengths in various tasks and scenarios, providing excellent service and solutions, resulting in more positive reviews and repeat customers for the airline.</p>'
+		if Internalschedule>=5:'<p>Me: It seems that things are nearly completed. Both passenger satisfaction and the enthusiasm of the cabin crew have noticeably increased.</p>'
 	'</div>'
 End
 
