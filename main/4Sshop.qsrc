@@ -143,9 +143,9 @@ if $ARGS[0] ="Continue to choose":
 
 
 	'<div class="dialog_menu">'
-		'<p><<$XS.NAME>>: <<$Protagonists_surname>> Sir! I'm truly sorry... I left the customization sheet at home!</p>'
+		'<p><<$XS.NAME>>: Mr. <<$Protagonists_surname>>! I'm truly sorry... I left the customization sheet at home!</p>'
 		'<p>Me: I don't blame you, after all, you had a few drinks.</p>'
-		'<p><<$XS.NAME>>:<<$Protagonists_surname>> Sir, if it's not inconvenient, please come with me to my place to get it.</p>'
+		'<p><<$XS.NAME>>: Mr. <<$Protagonists_surname>>, if it's not inconvenient, please come with me to my place to get it.</p>'
 	'</div>'
 end
  
@@ -163,8 +163,8 @@ if $ARGS[0] ="Pay the balance":
 
 
 	'<div class="dialog_menu">'
-		'<p>Store manager: <<$Protagonists_surname>> Sir! I Just got off the plane! Poor hospitality, poor hospitality! I apologize!</p>'
-		'<p><<$XS.NAME>>: <<$Protagonists_surname>> Sir! The total balance is... ￥415,000! We also included 5000￥ of VIP-exclusive services.</p>'
+		'<p>Store manager: Mr. <<$Protagonists_surname>>! I Just got off the plane! Poor hospitality, poor hospitality! I apologize!</p>'
+		'<p><<$XS.NAME>>: Mr. <<$Protagonists_surname>>! The total balance is... ￥415,000! We also included 5000￥ of VIP-exclusive services.</p>'
 		'<p>Store manager: <<$XS.NAME>>! Well done! You are getting more and more proficient at your job... *Yawn</p>'
 	'</div>'
 end
@@ -198,7 +198,7 @@ if $ARGS[0] ="VIP lounge":
 		'<p><<$CH.NAME>>: I am the agent in charge of this car dealership. This is my temporary office.</p>'
 		else
 		'<p>Me: Hi~</p>'
-		'<p><<$CH.name>>: <<$Protagonists_surname>> Sir! You are a valued Porsche owner. How can I assist you?</p>'
+		'<p><<$CH.name>>: Mr. <<$Protagonists_surname>>! You are a valued Porsche owner. How can I assist you?</p>'
 		if $CHEvent_chain>=3:'<p>Me: Don't phrase it like that. I also have the role of being your subordinate.</p>'
 		end
 	'</div>'
@@ -222,7 +222,7 @@ if $ARGS[0] ="Dealer dialogue":
 
 
 	'<div class="dialog_menu">'
-		'<p><<$CH.name>>: <<$Protagonists_surname>> Sir, what can I do for you?</p>'
+		'<p><<$CH.name>>: Mr. <<$Protagonists_surname>>, what can I do for you?</p>'
 		if  $CHEvent_chain=0:$CHEvent_chain=1
 	'</div>'
 end
