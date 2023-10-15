@@ -30,22 +30,21 @@ DISABLESCROLL = 0
 
 debug=1
 
-$ongload ='ongload'
-DatecountJun=0
+$ongload = 'ongload'
+DatecountJun = 0
 
 '<div class="main"><img class="img_stretch" src="images/intro/intro0.jpg">
 	<div class="e18">18+</div>
 	<div class="start_menu">'
-		'<a href="exec:gt''begin''"><div class="start_act"><font color="#7fffd4">新New game☻</font> </div></a>
-		<a href="exec:DatecountJun=0 & OPENGAME & DatecountJun=0 "><div class="start_act"><font color="#ff1493">❤Load the game❤</font> </div></a>
+		'<a href="exec:gt''begin''"><div class="start_act"><font color="#7fffd4">☻New Game☻</font> </div></a>
+		<a href="exec:DatecountJun=0 & OPENGAME & DatecountJun=0 "><div class="start_act"><font color="#ff1493">❤Load Game❤</font> </div></a>
 	</div>
 	
-		<div class="show_menu">'
-			 '<video preload="metadata" autoplay height="480">'
-			 '<source src="images\videos\杂\VBurning~<<rand(10,10)>>.webm" type=''video/webm;''></video></div>'
-		'</div>'
+	<div class="show_menu">'
+		'<video preload="metadata" autoplay height="480">'
+		'<source src="images\videos\杂\VBurning~<<rand(10,10)>>.webm" type=''video/webm;''></video></div>'
+	'</div>'
 '</div>'
-
 
 
 --- star ---------------------------------
