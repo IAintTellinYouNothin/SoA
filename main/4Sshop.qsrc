@@ -27,7 +27,7 @@ if $ARGS[0] ="":
 
 
 	'<div class="dialog_menu">'
-		'<p>·As soon as I entered the showroom, several salespeople began to size me up from top to bottom.</p>'
+		"<p>·As soon as I entered the showroom, several salespeople began to size me up from top to bottom.</p>"
 	'</div>'
 end
 
@@ -50,19 +50,19 @@ if $ARGS[0] ="dialogue":
 
 	'<div class="dialog_menu">'
 		if $sales_Event_Buyacar=0:
-		'<p><<$XS.NAME>>: Hello sir ❤ Let me introduce you to a few of our models.</p>'
-		'<p><<$XS.NAME>>: The 718 Cayman is a popular midsize sports car with a high-performance engine and a sophisticated body structure, providing excellent power and high cornering agility. The 718 offers multiple engine options, including a 2.0-liter four-cylinder turbocharged engine and a 4.0-liter six-cylinder turbocharged engine. They have maximum power outputs of 300 horsepower and 414 horsepower...…</p>'
+		"<p><<$XS.NAME>>: Hello sir ❤ Let me introduce you to a few of our models.</p>"
+		"<p><<$XS.NAME>>: The 718 Cayman is a popular midsize sports car with a high-performance engine and a sophisticated body structure, providing excellent power and high cornering agility. The 718 offers multiple engine options, including a 2.0-liter four-cylinder turbocharged engine and a 4.0-liter six-cylinder turbocharged engine. They have maximum power outputs of 300 horsepower and 414 horsepower...…</p>"
 		end
 		
 		if 3>=$sales_Event_Buyacar and $sales_Event_Buyacar>=1:
-		'<p>Me: Can I pick up my car now?</p>'
-		'<p><<$XS.NAME>>: Sir... please don't be in a hurry, the paperwork is currently under review. When the boss comes back I will call you to let you know.</p>'
-		if  $Salescall1=1 and $sales_Event_Buyacar=1:'<p><<$XS.name>> suddenly whispers: 'I mentioned over the phone that we should meet at the Red Restaurant after 9 PM on Saturday...</p>'
+		"<p>Me: Can I pick up my car now?</p>"
+		"<p><<$XS.NAME>>: Sir... please don't be in a hurry, the paperwork is currently under review. When the boss comes back I will call you to let you know.</p>"
+		if  $Salescall1=1 and $sales_Event_Buyacar=1:"<p><<$XS.name>> suddenly whispers: 'I mentioned over the phone that we should meet at the Red Restaurant after 9 PM on Saturday...</p>"
 		end
 		
 		if $sales_Event_Buyacar=4:
-		'<p>Me: Can I pick up my car now?</p>'
-		'<p><<$XS.NAME>>: We are ready for you! Please follow me to the VIP lounge.</p>'
+		"<p>Me: Can I pick up my car now?</p>"
+		"<p><<$XS.NAME>>: We are ready for you! Please follow me to the VIP lounge.</p>"
 		end
 	'</div>'
 end
@@ -78,16 +78,16 @@ if $ARGS[0] ="Talk in the car":
 
 	'<div class="button_menu">'
 		'<div class="buttonG"><a href="exec:minutes+=5 & gt ''4Sshop'',''Full purchase''">Consider buying in full</a></div>'
-		'<div class="button"><a href="exec:minutes+=5 & gt ''Shopping_mall''">It's too expensive</a></div>'
+		'<div class="button"><a href="exec:minutes+=5 & gt ''Shopping_mall''">It''s too expensive</a></div>'
 	'</div>'
 
 
 	'<div class="dialog_menu">'
-		'<p><<$XS.NAME>>: Thank you, sir!❤ The interior of the 718 features high-quality materials, including leather, aluminum, and premium fabrics. The seats inside the car are power adjustable and are heated to help keep you comfortable in various climate conditions...</p>'
-		'<p>Me: Can I test drive?</p>'
-		'<p><<$XS.NAME>>: Normally, you would need to sign a test drive agreement and then proceed with the test drive under the guidance of the dealer. However, if you have the intention to purchase the vehicle, I can make an exception and allow you to skip the process and do a test drive right away.❤</p>'
-		'<p>Me: You don`t say that to every customer, do you?</p>'
-		'<p><<$XS.NAME>>:"How could that be?❤ Do you have the intention to purchase the vehicle?❤ The current price for the <<Year>> 718 model is ¥718,000.❤ We currently have a special promotion, and if you order today, you can enjoy a 40% discount.❤"</p>'
+		"<p><<$XS.NAME>>: Thank you, sir!❤ The interior of the 718 features high-quality materials, including leather, aluminum, and premium fabrics. The seats inside the car are power adjustable and are heated to help keep you comfortable in various climate conditions...</p>"
+		"<p>Me: Can I test drive?</p>"
+		"<p><<$XS.NAME>>: Normally, you would need to sign a test drive agreement and then proceed with the test drive under the guidance of the dealer. However, if you have the intention to purchase the vehicle, I can make an exception and allow you to skip the process and do a test drive right away.❤</p>"
+		"<p>Me: You don`t say that to every customer, do you?</p>"
+		"<p><<$XS.NAME>>:"How could that be?❤ Do you have the intention to purchase the vehicle?❤ The current price for the <<Year>> 718 model is ¥718,000.❤ We currently have a special promotion, and if you order today, you can enjoy a 40% discount.❤"</p>"
 	'</div>'
 end
  
@@ -100,16 +100,16 @@ if $ARGS[0] ="Full purchase":
 
 	'<div class="button_menu">'
 		if money>=70000:'<div class="buttonG"><a href="exec:minutes+=5 & money-=70000 & gt ''4Sshop'',''Payment of deposit''">Make a down payment</a></div>'else'<div class="buttonGr"><a href="exec:">Make a down payment</a></div>'
-		'<div class="button"><a href="exec:minutes+=5 & gt ''Shopping_mall''">Let's discuss it later.</a></div>'
+		'<div class="button"><a href="exec:minutes+=5 & gt ''Shopping_mall''">Let''s discuss it later.</a></div>'
 	'</div>'
 
 
 	'<div class="dialog_menu">'
-		'<p><<$XS.NAME>>: Oh... a full payment, sir?❤ I didn't expect that at your young age you would already be so successful.❤</p>'
-		'<p>Me: Then let`s sign the contract.</p>'
-		'<p><<$XS.NAME>>: Sir ❤ since our boss isn't here today, how about you make the down payment first? When the boss returns, I'll give you a call.</p>'
-		'<p>Me: How much is the deposit?</p>'
-		'<p><<$XS.NAME>>: The down payment is ¥70,000❤ If you make the payment today, you'll also receive a complimentary in-car refrigerator.❤</p>'
+		"<p><<$XS.NAME>>: Oh... a full payment, sir?❤ I didn't expect that at your young age you would already be so successful.❤</p>"
+		"<p>Me: Then let`s sign the contract.</p>"
+		"<p><<$XS.NAME>>: Sir ❤ since our boss isn't here today, how about you make the down payment first? When the boss returns, I'll give you a call.</p>"
+		"<p>Me: How much is the deposit?</p>"
+		"<p><<$XS.NAME>>: The down payment is ¥70,000❤ If you make the payment today, you'll also receive a complimentary in-car refrigerator.❤</p>"
 	'</div>'
 end
 
@@ -125,8 +125,8 @@ if $ARGS[0] ="Payment of deposit":
 
 
 	'<div class="dialog_menu">'
-		'<p><<$XS.NAME>>: Alright! Mr. <<$Protagonists_surname>>, please fill out all your personal information, and once the boss is back, I will give you a call.</p>'
-		'<p>Me: Ok.</p>'
+		"<p><<$XS.NAME>>: Alright! Mr. <<$Protagonists_surname>>, please fill out all your personal information, and once the boss is back, I will give you a call.</p>"
+		"<p>Me: Ok.</p>"
 		$sales_Event_Buyacar=1
 	'</div>'
 end
@@ -143,9 +143,9 @@ if $ARGS[0] ="Continue to choose":
 
 
 	'<div class="dialog_menu">'
-		'<p><<$XS.NAME>>: Mr. <<$Protagonists_surname>>! I'm truly sorry... I left the customization sheet at home!</p>'
-		'<p>Me: I don't blame you, after all, you had a few drinks.</p>'
-		'<p><<$XS.NAME>>: Mr. <<$Protagonists_surname>>, if it's not inconvenient, please come with me to my place to get it.</p>'
+		"<p><<$XS.NAME>>: Mr. <<$Protagonists_surname>>! I'm truly sorry... I left the customization sheet at home!</p>"
+		"<p>Me: I don't blame you, after all, you had a few drinks.</p>"
+		"<p><<$XS.NAME>>: Mr. <<$Protagonists_surname>>, if it's not inconvenient, please come with me to my place to get it.</p>"
 	'</div>'
 end
  
@@ -163,9 +163,9 @@ if $ARGS[0] ="Pay the balance":
 
 
 	'<div class="dialog_menu">'
-		'<p>Store manager: Mr. <<$Protagonists_surname>>! I Just got off the plane! Poor hospitality, poor hospitality! I apologize!</p>'
-		'<p><<$XS.NAME>>: Mr. <<$Protagonists_surname>>! The total balance is... ￥415,000! We also included 5000￥ of VIP-exclusive services.</p>'
-		'<p>Store manager: <<$XS.NAME>>! Well done! You are getting more and more proficient at your job... *Yawn</p>'
+		"<p>Store manager: Mr. <<$Protagonists_surname>>! I Just got off the plane! Poor hospitality, poor hospitality! I apologize!</p>"
+		"<p><<$XS.NAME>>: Mr. <<$Protagonists_surname>>! The total balance is... ￥415,000! We also included 5000￥ of VIP-exclusive services.</p>"
+		"<p>Store manager: <<$XS.NAME>>! Well done! You are getting more and more proficient at your job... *Yawn</p>"
 	'</div>'
 end
  
@@ -195,11 +195,11 @@ if $ARGS[0] ="VIP lounge":
 
 	'<div class="dialog_menu">'
 		if $CH.available=0:
-		'<p><<$CH.NAME>>: I am the agent in charge of this car dealership. This is my temporary office.</p>'
+		"<p><<$CH.NAME>>: I am the agent in charge of this car dealership. This is my temporary office.</p>"
 		else
-		'<p>Me: Hi~</p>'
-		'<p><<$CH.name>>: Mr. <<$Protagonists_surname>>! You are a valued Porsche owner. How can I assist you?</p>'
-		if $CHEvent_chain>=3:'<p>Me: Don't phrase it like that. I also have the role of being your subordinate.</p>'
+		"<p>Me: Hi~</p>"
+		"<p><<$CH.name>>: Mr. <<$Protagonists_surname>>! You are a valued Porsche owner. How can I assist you?</p>"
+		if $CHEvent_chain>=3:"<p>Me: Don't phrase it like that. I also have the role of being your subordinate.</p>"
 		end
 	'</div>'
 end
@@ -222,7 +222,7 @@ if $ARGS[0] ="Dealer dialogue":
 
 
 	'<div class="dialog_menu">'
-		'<p><<$CH.name>>: Mr. <<$Protagonists_surname>>, what can I do for you?</p>'
+		"<p><<$CH.name>>: Mr. <<$Protagonists_surname>>, what can I do for you?</p>"
 		if  $CHEvent_chain=0:$CHEvent_chain=1
 	'</div>'
 end
@@ -240,13 +240,13 @@ if $ARGS[0] ="Event one":
 
 
 	'<div class="dialog_menu">'
-		'<p><<$CH.name>>: What does dad mean by what he said?</p>'
-		'<p>secretary: What the boss means is that if you can't promote [the new energy motorcycle] successfully, then your brother will take over the entire car dealership business.</p>'
-		'<p><<$CH.name>>: Can you please give me a little more time?</p>'
-		'<p>secretary: Miss, you are putting me in a difficult situation like this.</p>'
-		'<p><<$CH.name>>: Please!</p>'
-		'<p>secretary: In that case, I'll give you a few more weeks. Right now, your only hope lies in the sales of the [new energy motorcycles].</p>'
-		'<p><<$CH.name>>: I will do my best!</p>'
+		"<p><<$CH.name>>: What does dad mean by what he said?</p>"
+		"<p>secretary: What the boss means is that if you can't promote [the new energy motorcycle] successfully, then your brother will take over the entire car dealership business.</p>"
+		"<p><<$CH.name>>: Can you please give me a little more time?</p>"
+		"<p>secretary: Miss, you are putting me in a difficult situation like this.</p>"
+		"<p><<$CH.name>>: Please!</p>"
+		"<p>secretary: In that case, I'll give you a few more weeks. Right now, your only hope lies in the sales of the [new energy motorcycles].</p>"
+		"<p><<$CH.name>>: I will do my best!</p>"
 		if  $CHEvent_chain=1:$CHEvent_chain=2
 	'</div>'
 end
@@ -269,8 +269,8 @@ if $ARGS[0] ="Motorcycle booth":
 		'</div>'
 
 		'<div class="dialog_menu">'
-			'<p><<$Carmodel.name>>: The new energy motorcycles are a type of motorcycle that uses electricity, solar power, hydrogen, and other alternatives to traditional fuels, offering a number advantages and vast prospects... *yawn.</p>'
-			'<p>Me: Her performance is very lacking.</p>'
+			"<p><<$Carmodel.name>>: The new energy motorcycles are a type of motorcycle that uses electricity, solar power, hydrogen, and other alternatives to traditional fuels, offering a number advantages and vast prospects... *yawn.</p>"
+			"<p>Me: Her performance is very lacking.</p>"
 		'</div>'
 	end
 
@@ -279,12 +279,12 @@ if $ARGS[0] ="Motorcycle booth":
 		
 		'<div class="button_menu">'
 			'<div class="buttonS3"><a href="exec:minutes+=5 & gt ''Dealer_Event'',''Car dealer_Fuck_Shop carB1''">Mock signing</a></div>'
-			'<div class="button"><a href="exec:minutes+=5 & gt ''4Sshop''">leave</a></div>'
+			'<div class="button"><a href="exec:minutes+=5 & gt ''4Sshop''">Leave</a></div>'
 		'</div>'
 
 		'<div class="dialog_menu">'
-			'<p><<$Carmodel.name>>: The  new energy motorcycles are a type of motorcycles that uses electrical energy, solar energy, hydrogen energy, etc. to replace traditional fuels... You can enjoy a three-year flash charge discount from Imperial Energy when you place an order this week.</p>'
-			'<p>I: I didn`t expect her to be so diligent.</p>'
+			"<p><<$Carmodel.name>>: The  new energy motorcycles are a type of motorcycles that uses electrical energy, solar energy, hydrogen energy, etc. to replace traditional fuels... You can enjoy a three-year flash charge discount from Imperial Energy when you place an order this week.</p>"
+			"<p>I: I didn`t expect her to be so diligent.</p>"
 		'</div>'
 	end
 
@@ -299,9 +299,9 @@ if $ARGS[0] ="Motorcycle booth":
 
 
 		'<div class="dialog_menu">'
-			'<p><<$CH.name>>: The  new energy motorcycles are a type of motorcycles that uses electrical energy, solar energy, hydrogen energy, etc. to replace traditional fuels... You can enjoy a three-year flash charge discount from Imperial Energy when you place an order this week.</p>'
-			'<p>I: You're personally standing on the platform? You are really dedicated.</p>'
-			'<p><<$CH.name>>: Ah!? Brother!</p>'
+			"<p><<$CH.name>>: The  new energy motorcycles are a type of motorcycles that uses electrical energy, solar energy, hydrogen energy, etc. to replace traditional fuels... You can enjoy a three-year flash charge discount from Imperial Energy when you place an order this week.</p>"
+			"<p>I: You're personally standing on the platform? You are really dedicated.</p>"
+			"<p><<$CH.name>>: Ah!? Brother!</p>"
 		'</div>'
 	end
 end
@@ -317,13 +317,13 @@ if $ARGS[0] ="The person behind":
 
 
 	'<div class="dialog_menu">'
-		'<p>Patrick Bateman: Who told you dress like this?</p>'
-		'<p><<$CH.name>>: Huh!? Brother! Don`t you like it?</p>'
-		'<p>Patrick Bateman: You know, I'm really disappointed. That irresponsible dress code and unprofessional behavior on your part really rubbed me the wrong way. I need you to be able to approach this job in a professional manner and be highly vigilant and responsible at all times.</p>'
-		'<p>Me: Uh... it was my idea.</p>'
-		'<p>Patrick Bateman: I cannot tolerate your stupid ideas causing any negative impact on my sister. Stop immediately, or I will not hesitate to find someone else to complete this task.</p>'
-		'<p><<$CH.name>>: brother!! What you said is too much!</p>'
-		'<p>Patrick Bateman: Hurry up and put on your clothes! That's an order!</p>'
+		"<p>Patrick Bateman: Who told you dress like this?</p>"
+		"<p><<$CH.name>>: Huh!? Brother! Don`t you like it?</p>"
+		"<p>Patrick Bateman: You know, I'm really disappointed. That irresponsible dress code and unprofessional behavior on your part really rubbed me the wrong way. I need you to be able to approach this job in a professional manner and be highly vigilant and responsible at all times.</p>"
+		"<p>Me: Uh... it was my idea.</p>"
+		"<p>Patrick Bateman: I cannot tolerate your stupid ideas causing any negative impact on my sister. Stop immediately, or I will not hesitate to find someone else to complete this task.</p>"
+		"<p><<$CH.name>>: brother!! What you said is too much!</p>"
+		"<p>Patrick Bateman: Hurry up and put on your clothes! That's an order!</p>"
 	'</div>'
 end
 
@@ -337,11 +337,11 @@ if $ARGS[0] ="Go for a drink":
 	'</div>'
 
 	'<div class="dialog_menu">'
-		'<p><<$CH.name>>: Are you okay? My brother, uh... That's the way he talks. Don't take it to heart. It's not your fault. I volunteered to do it.</p>'
-		'<p>Me: No... I'm sorry for making your brother hate you.</p>'
-		'<p><<$CH.name>>: I'm his favorite sister, how could he hate me? Hey, let's not talk that anymore. Cheers!</p>'
-		'<p>I: I thought you didn't drink?</p>'
-		'<p><<$CH.name>>: I lied to you! I'm a very good drinker!❤</p>'
+		"<p><<$CH.name>>: Are you okay? My brother, uh... That's the way he talks. Don't take it to heart. It's not your fault. I volunteered to do it.</p>"
+		"<p>Me: No... I'm sorry for making your brother hate you.</p>"
+		"<p><<$CH.name>>: I'm his favorite sister, how could he hate me? Hey, let's not talk that anymore. Cheers!</p>"
+		"<p>I: I thought you didn't drink?</p>"
+		"<p><<$CH.name>>: I lied to you! I'm a very good drinker!❤</p>"
 	'</div>'
 end
 

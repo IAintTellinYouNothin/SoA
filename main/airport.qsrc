@@ -28,9 +28,9 @@ if $ARGS[0]="":
 	'</div>'
 
 	'<div class="dialog_menu">'
-		'<p>·As a result of the new law, countless women have traveled by flight from all over the world to come here, where every woman can unleash her true nature.p>'
-		'<p>——————————</p>'
-		if $LXS.available=0:'<p>·Passenger plane on fire<a href="exec:gt ''airport'',''Passenger plane on fire''">View</a></p>'
+		"<p>·As a result of the new law, countless women have traveled by flight from all over the world to come here, where every woman can unleash her true nature.p>'
+		"<p>——————————</p>"
+		if $LXS.available=0:"<p>·Passenger plane on fire<a href="exec:gt ''airport'',''Passenger plane on fire''">View</a></p>"
 	'</div>'
 End
 
@@ -44,10 +44,10 @@ if $ARGS[0]="Passenger plane on fire":
 	'</div>'
 
 	'<div class="dialog_menu">'
-		'<p>·Flight LB615 has lost contact with the tower after a double-engine failure for unknown reasons.</p>'
-		'<p>·For the rest of story on Flight LB615, please visit the link below to download it separately↓ No need for a VPN, if it doesn't open, try a different browser.</p>'
-		'<p><a href="https://airtable.com/appZwBEUmnRghFhgz/shrwhq3RAtOAfEDbo/tblnvavxTkHZgF3Vn"> https://airtable.com/appZwBEUmnRghFhgz/shrwhq3RAtOAfEDbo/tblnvavxTkHZgF3Vn</a></p>'
-		'<p>·If you're too lazy to play, you can also just buy the pass code.</p>'
+		"<p>·Flight LB615 has lost contact with the tower after a double-engine failure for unknown reasons.</p>"
+		"<p>·For the rest of story on Flight LB615, please visit the link below to download it separately↓ No need for a VPN, if it doesn't open, try a different browser.</p>"
+		"<p><a href="https://airtable.com/appZwBEUmnRghFhgz/shrwhq3RAtOAfEDbo/tblnvavxTkHZgF3Vn"> https://airtable.com/appZwBEUmnRghFhgz/shrwhq3RAtOAfEDbo/tblnvavxTkHZgF3Vn</a></p>"
+		"<p>·If you're too lazy to play, you can also just buy the pass code.</p>"
 	'</div>'
 End
 
@@ -62,8 +62,8 @@ if $ARGS[0]="Crew office":
 	'</div>'
 
 	'<div class="dialog_menu">'
-		'<p><<$QJ.NAME>>:  First, we need to understand the root causes of the decline in passenger satisfaction and service quality. Since no one knows you, please go undercover and investigate.</p>'
-		'<p>Me: Got it.</p>'
+		"<p><<$QJ.NAME>>:  First, we need to understand the root causes of the decline in passenger satisfaction and service quality. Since no one knows you, please go undercover and investigate.</p>"
+		"<p>Me: Got it.</p>"
 	'</div>'
 End
 
@@ -85,12 +85,12 @@ if $ARGS[0]="Crew office2":
 	'</div>'
 
 	'<div class="dialog_menu">'
-		'<p><<$QJ.NAME>>:   seems the proposal was approved in the meeting? That's great. Let's move on to the next step.</p>'
-		'<p>Me: Please tell me what they are.</p>'
-		'<p><<$QJ.NAME>>: The first step is to lay off flight attendants who are unwilling to provide sexual favors.</p>'
-		'<p><<$QJ.NAME>>: Secondly, to recruit and train women in society who are willing to work part-time.</p>'
-		'<p><<$QJ.NAME>>: Finally, we continuously conduct covert inspections to optimize crew personnel assignments, thereby enhancing passenger satisfaction and the airline's operational revenue. Through precise personnel management, we can ensure that crew members can fully utilize their strengths in various tasks and scenarios, providing excellent service and solutions, resulting in more positive reviews and repeat customers for the airline.</p>'
-		if Internalschedule>=5:'<p>Me: It seems that things are nearly completed. Both passenger satisfaction and the enthusiasm of the cabin crew have noticeably increased.</p>'
+		"<p><<$QJ.NAME>>: Seems the proposal was approved in the meeting? That's great. Let's move on to the next step.</p>"
+		"<p>Me: Please tell me what they are.</p>"
+		"<p><<$QJ.NAME>>: The first step is to lay off flight attendants who are unwilling to provide sexual favors.</p>"
+		"<p><<$QJ.NAME>>: Secondly, to recruit and train women in society who are willing to work part-time.</p>"
+		"<p><<$QJ.NAME>>: Finally, we continuously conduct covert inspections to optimize crew personnel assignments, thereby enhancing passenger satisfaction and the airline's operational revenue. Through precise personnel management, we can ensure that crew members can fully utilize their strengths in various tasks and scenarios, providing excellent service and solutions, resulting in more positive reviews and repeat customers for the airline.</p>"
+		if Internalschedule>=5:"<p>Me: It seems that things are nearly completed. Both passenger satisfaction and the enthusiasm of the cabin crew have noticeably increased.</p>"
 	'</div>'
 End
 

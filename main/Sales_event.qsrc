@@ -25,11 +25,11 @@ if $args[0]="phone1":
 		'<div class="button"><a href="exec:gt ''Home_bedroom''">Got it</a></div>'
 	'</div>'
 	'<div class="dialog_menu">'	
-		'<p><<$XS.name>>: Hello ❤Mr. <<$Protagonists_surname>>!❤ Do you have time on Saturday night? If you're available, please come to the restaurant next to the 4S store, where I can assist you with customizing your vehicle to suit your preferences. The 718's customization options include different engine choices, body colors, wheels and tires, seat materials and colors, interior materials and colors, multimedia and navigation systems, driving assistance systems, safety configurations, and various exterior accessory packages.</p>'
-		'<p>Me: Saturday night... the restaurant next to the 4S store, right? Okay.</p>'
-		'<p><<$XS.name>>: Yes ❤Mr. <<$Protagonists_surname>>!❤ Overall, the 718 offers a wide range of customization options, and I can assist you in tailoring the vehicle to your preferences and needs.</p>'
-		'<p>Me: Saturday night... what time exactly?</p>'
-		'<p><<$XS.name>>: I'm available anytime after 21:00!</p>'
+		"<p><<$XS.name>>: Hello ❤Mr. <<$Protagonists_surname>>!❤ Do you have time on Saturday night? If you're available, please come to the restaurant next to the 4S store, where I can assist you with customizing your vehicle to suit your preferences. The 718's customization options include different engine choices, body colors, wheels and tires, seat materials and colors, interior materials and colors, multimedia and navigation systems, driving assistance systems, safety configurations, and various exterior accessory packages.</p>"
+		"<p>Me: Saturday night... the restaurant next to the 4S store, right? Okay.</p>"
+		"<p><<$XS.name>>: Yes ❤Mr. <<$Protagonists_surname>>!❤ Overall, the 718 offers a wide range of customization options, and I can assist you in tailoring the vehicle to your preferences and needs.</p>"
+		"<p>Me: Saturday night... what time exactly?</p>"
+		"<p><<$XS.name>>: I'm available anytime after 21:00!</p>"
 		$Salescall1=1
 	'</div>'
 End
@@ -45,11 +45,11 @@ if $args[0]="restaurant":
 	'</div>'
 	
 	'<div class="dialog_menu">'	
-		'<p><<$XS.name>>:Hello ❤Mr. <<$Protagonists_surname>>!❤ I will provide you with the highest quality service.</p>'
-		'<p>Me: Why are we doing this here?</p>'
-		'<p><<$XS.name>>:Well, you see ❤Mr. <<$Protagonists_surname>>❤ There is a power outage in the store.</p>'
-		'<p>I:Is that so?</p>'
-		'<p><<$XS.name>>: Yes! So let's choose the configuration while enjoying some cocktails!</p>'
+		"<p><<$XS.name>>:Hello ❤Mr. <<$Protagonists_surname>>!❤ I will provide you with the highest quality service.</p>"
+		"<p>Me: Why are we doing this here?</p>"
+		"<p><<$XS.name>>:Well, you see ❤Mr. <<$Protagonists_surname>>❤ There is a power outage in the store.</p>"
+		"<p>I:Is that so?</p>"
+		"<p><<$XS.name>>: Yes! So let's choose the configuration while enjoying some cocktails!</p>"
 	'</div>'
 End
 
@@ -65,9 +65,9 @@ if $args[0]="restaurant2":
 	'</div>'
 	
 	'<div class="dialog_menu">'	
-		'<p><<$XS.name>>: Keyless entry, embossed seats, power steering, power mirrors, anti-glare rearview mirror... heated seats, ventilation, BOSE® sound system, and various driving assistance systems and safety configurations... Is that correct?</p>'
-		'<p>Me: Does that sound okay? Ph. and there are 20-inch Carrera Sport wheels...</p>'
-		'<p><<$XS.name>>:Oh oh oh... ❤Mr. <<$Protagonists_surname>>❤ Your memory is really good.</p>'
+		"<p><<$XS.name>>: Keyless entry, embossed seats, power steering, power mirrors, anti-glare rearview mirror... heated seats, ventilation, BOSE® sound system, and various driving assistance systems and safety configurations... Is that correct?</p>"
+		"<p>Me: Does that sound okay? Ph. and there are 20-inch Carrera Sport wheels...</p>"
+		"<p><<$XS.name>>:Oh oh oh... ❤Mr. <<$Protagonists_surname>>❤ Your memory is really good.</p>"
 	'</div>'
 End
 
@@ -85,23 +85,23 @@ if $args[0]="Take her home":
 	
 	'<div class="dialog_menu">'	
 		if a=0:
-		'<p><<$XS.name>>: 20... inch Carrera Spo...rt wheels... 20-inch Carrera Sport wheels..</p>'
-		'<p>Me: You're drunk... let's discuss the configuration another day.</p>'
-		'<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>❤ 20-inch Carrera Sport wheels... My apartment is over there... Go straight ahead...</p>'
+		"<p><<$XS.name>>: 20... inch Carrera Spo...rt wheels... 20-inch Carrera Sport wheels..</p>"
+		"<p>Me: You're drunk... let's discuss the configuration another day.</p>"
+		"<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>❤ 20-inch Carrera Sport wheels... My apartment is over there... Go straight ahead...</p>"
 		end
 		if a=1:
-		'<p>Me: We're here, be careful not to bump into anything.</p>'
-		'<p><<$XS.name>>: Thank you ❤Mr. <<$Protagonists_surname>>❤... You... You're truly a good person...</p>'
+		"<p>Me: We're here, be careful not to bump into anything.</p>"
+		"<p><<$XS.name>>: Thank you ❤Mr. <<$Protagonists_surname>>❤... You... You're truly a good person...</p>"
 		end
 		if a=2:
-		'<p>Me: Here, drink some water.</p>'
+		"<p>Me: Here, drink some water.</p>"
 		end
 		if a=3 or a=4:
-		'<p>·I don`t think she will notice... right?</p>'
+		"<p>·I don`t think she will notice... right?</p>"
 		end
 		if a=5:
-		'<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>❤... do we also need to choose which headlights?❤</p>'
-		'<p>Me: I... I'll take my leave.</p>'
+		"<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>❤... do we also need to choose which headlights?❤</p>"
+		"<p>Me: I... I'll take my leave.</p>"
 		$sales_Event_Buyacar=2
 		end
 	'</div>'
@@ -115,7 +115,7 @@ if $args[0]="temptation":
 	'</div>'
 	
 	'<div class="dialog_menu">'	
-		'<p><<$XS.name>>: Mr. <<$Protagonists_surname>>... Please wait a moment, I will be down soon.</p>'
+		"<p><<$XS.name>>: Mr. <<$Protagonists_surname>>... Please wait a moment, I will be down soon.</p>"
 	'</div>'
 End
 
@@ -128,7 +128,7 @@ if $args[0]="temptation2":
 	'<div class="button_menu">'
 		if a=0:'<div class="button"><a href="exec:a+=1& gt ''Sales_event'',''temptation2''">。。。</a></div>'
 		if a=1:'<div class="button"><a href="exec:a+=1& gt ''Sales_event'',''temptation2''">Go upstairs</a></div>'
-		if a=2:'<div class="button"><a href="exec:a+=1& gt ''Sales_event'',''temptation2''">Isn't that so?</a></div>'
+		if a=2:'<div class="button"><a href="exec:a+=1& gt ''Sales_event'',''temptation2''">Isn''t that so?</a></div>'
 		if a=3:'<div class="button"><a href="exec:a+=1& gt ''Sales_event'',''temptation2''">Nod</a></div>'
 		if a=4:'<div class="button"><a href="exec:a+=1& gt ''Sales_event'',''temptation2''">Nod</a></div>'
 		if a=5:'<div class="button"><a href="exec:a+=1& gt ''4Sshop''">Go back</a></div>'
@@ -136,29 +136,29 @@ if $args[0]="temptation2":
 	
 	'<div class="dialog_menu">'	
 		if a=0:
-		'<p><<$XS.name>>: .........</p>'
+		"<p><<$XS.name>>: .........</p>"
 		end
 		if a=1:
-		'<p>I:……?!</p>'
-		'<p><<$XS.name>>: Mr. <<$Protagonists_surname>> ❤Can you pick it up for me?❤</p>'
+		"<p>I:……?!</p>"
+		"<p><<$XS.name>>: Mr. <<$Protagonists_surname>> ❤Can you pick it up for me?❤</p>"
 		end
 		if a=2:
-		'<p>Me: Your lingerie... so sexy...</p>'
-		'<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>❤... The last time you brought me back... you touched me, didn't you?</p>'
-		'<p>Me: ...Uh...</p>'
-		'<p><<$XS.name>>: I'm wearing something much sexier today ❤Mr. <<$Protagonists_surname>>❤</p>'
+		"<p>Me: Your lingerie... so sexy...</p>"
+		"<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>❤... The last time you brought me back... you touched me, didn't you?</p>"
+		"<p>Me: ...Uh...</p>"
+		"<p><<$XS.name>>: I'm wearing something much sexier today ❤Mr. <<$Protagonists_surname>>❤</p>"
 		end
 		if a=3:
-		'<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>❤... Do you want to touch me? I'd like you to buy the 5000￥ VIP services in return.</p>'
-		'<p>I:......</p>'
-		'<p><<$XS.name>>: ❤I won't get commission when you buy a car in full... Besides, when you touch me... I get very excited!❤</p>'
+		"<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>❤... Do you want to touch me? I'd like you to buy the 5000￥ VIP services in return.</p>"
+		"<p>I:......</p>"
+		"<p><<$XS.name>>: ❤I won't get commission when you buy a car in full... Besides, when you touch me... I get very excited!❤</p>"
 		end
 		if a=4:
-		'<p><<$XS.name>>: It`s silk, doesn`t it feel good ❤Mr. <<$Protagonists_surname>>?❤</p>'
-		'<p>I:......</p>'
+		"<p><<$XS.name>>: It`s silk, doesn`t it feel good ❤Mr. <<$Protagonists_surname>>?❤</p>"
+		"<p>I:......</p>"
 		end
 		if a=5:
-		'<p><<$XS.name>>: Mr. <<$Protagonists_surname>>... I'll get my wages docked if I go back too late...</p>'
+		"<p><<$XS.name>>: Mr. <<$Protagonists_surname>>... I'll get my wages docked if I go back too late...</p>"
 		$sales_Event_Buyacar=3
 		end
 	'</div>'
@@ -218,30 +218,30 @@ if $args[0]="Sales_payment":
 
 	if a=0:
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>: Manager, please sign...</p>'
-			 '<p>Store manager: ...zzZ... zzZ</p>'
-			 '<p><<$XS.name>>: Manager... Manager?</p>'
-			 '<p>Me: Sigh...</p>'
+			 "<p><<$XS.name>>: Manager, please sign...</p>"
+			 "<p>Store manager: ...zzZ... zzZ</p>"
+			 "<p><<$XS.name>>: Manager... Manager?</p>"
+			 "<p>Me: Sigh...</p>"
 		 '</div>'
 	end
 
 	if a=1 or a=2:
 		 '<div class="dialog_menu">'
-			 '<p>Me: Let's pick up where we left off at your house.❤</p>'
-			 '<p><<$XS.name>>: <<$Panting>> ❤The store manager will wake up! Mr. <<$Protagonists_surname>>!❤</p>'
+			 "<p>Me: Let's pick up where we left off at your house.❤</p>"
+			 "<p><<$XS.name>>: <<$Panting>> ❤The store manager will wake up! Mr. <<$Protagonists_surname>>!❤</p>"
 		 '</div>'
 	end
 
 
 	if 4>=a and a>=3:
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>: Mr. <<$Protagonists_surname>>! ❤<<$Panting>>❤</p>'
+			 "<p><<$XS.name>>: Mr. <<$Protagonists_surname>>! ❤<<$Panting>>❤</p>"
 		 '</div>'
 	end
 
 	if 9>=a and a>=5:
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>: Mr. <<$Protagonists_surname>>! ❤<<$words>>❤</p>'
+			 "<p><<$XS.name>>: Mr. <<$Protagonists_surname>>! ❤<<$words>>❤</p>"
 		 '</div>'
 	end
 
@@ -249,9 +249,9 @@ if $args[0]="Sales_payment":
 		 $XS.love+=q+my.charm
 		 $XS.bad+=q
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>!❤ You almost cost me my job!</p>'
-			 '<p>I: I'm sorry, when can I pick up my car?</p>'
-			 '<p><<$XS.name>>: When the store manager wakes up... now get out first!</p>'
+			 "<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>!❤ You almost cost me my job!</p>"
+			 "<p>I: I'm sorry, when can I pick up my car?</p>"
+			 "<p><<$XS.name>>: When the store manager wakes up... now get out first!</p>"
 			 $sales_Event_Buyacar=4
 		 '</div>'
 	end
@@ -296,23 +296,23 @@ if $args[0]="Sales_carting":
 
 	if a=0:
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>!❤ let's consider this as the ¥5000 VIP service... I'll also treat the service as a little bonus for me!❤ I hope you don't mind!❤</p>'
-			 '<p>Me: Okay... no one will come, right?</p>'
-			 '<p><<$XS.name>>: No, of course not❤</p>'
+			 "<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>!❤ let's consider this as the ¥5000 VIP service... I'll also treat the service as a little bonus for me!❤ I hope you don't mind!❤</p>"
+			 "<p>Me: Okay... no one will come, right?</p>"
+			 "<p><<$XS.name>>: No, of course not❤</p>"
 		 '</div>'
 	end
 
 	if 3>=a and a>=1:
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>: <<$Panting>>❤ Do you like it? ❤Mr. <<$Protagonists_surname>>!❤</p>'
-			 '<p>Me: ...Yes, I like it!</p>'
+			 "<p><<$XS.name>>: <<$Panting>>❤ Do you like it? ❤Mr. <<$Protagonists_surname>>!❤</p>"
+			 "<p>Me: ...Yes, I like it!</p>"
 		 '</div>'
 	end
 
 
 	if 5>=a and a>=4:
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>❤ If there's a chance... ❤ We can go even further next time!❤</p>'
+			 "<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>❤ If there's a chance... ❤ We can go even further next time!❤</p>"
 		 '</div>'
 	end
 
@@ -321,8 +321,8 @@ if $args[0]="Sales_carting":
 		 $XS.love+=q+my.charm
 		 $XS.bad+=q
 		 '<div class="dialog_menu">'
-			 '<p>Me: Oh, what kind of development are you thinking of?</p>'
-			 '<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>❤ I'm still single... If you or your friends are in need of a spouse... ❤You know where to find me!❤</p>'
+			 "<p>Me: Oh, what kind of development are you thinking of?</p>"
+			 "<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>❤ I'm still single... If you or your friends are in need of a spouse... ❤You know where to find me!❤</p>"
 			 $sales_Event_Buyacar=5
 			 Porsche=1
 		 '</div>'
@@ -373,23 +373,23 @@ if $args[0]="sales_Fuck_Her house":
 
 	if a=0:
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>❤ Are you going to introduce me to someone?</p>'
-			 '<p>Me: You're so good looking, you should be able to find someone to date, right?</p>'
-			 '<p><<$XS.name>>: Of course there is no shortage of men to date! ❤But Cinderella wants to marry the prince!❤</p>'
+			 "<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>❤ Are you going to introduce me to someone?</p>"
+			 "<p>Me: You're so good looking, you should be able to find someone to date, right?</p>"
+			 "<p><<$XS.name>>: Of course there is no shortage of men to date! ❤But Cinderella wants to marry the prince!❤</p>"
 		 '</div>'
 	end
 
 	if 5>=a and a>=1:
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>: <<$Panting>> ❤Like Mr. <<$Protagonists_surname>>! ❤Can a 'prince' like you be interested in someone like me?❤</p>'
-			 '<p>Me: It depends on your performance...</p>'
+			 "<p><<$XS.name>>: <<$Panting>> ❤Like Mr. <<$Protagonists_surname>>! ❤Can a 'prince' like you be interested in someone like me?❤</p>"
+			 "<p>Me: It depends on your performance...</p>"
 		 '</div>'
 	end
 
 	if a=6:
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>: Ew, so fishy! Mr. <<$Protagonists_surname>>, how was my performance❤</p>'
-			 '<p>Me: That was quite the performance</p>'
+			 "<p><<$XS.name>>: Ew, so fishy! Mr. <<$Protagonists_surname>>, how was my performance❤</p>"
+			 "<p>Me: That was quite the performance</p>"
 		 '</div>'
 	end
 
@@ -398,8 +398,8 @@ if $args[0]="sales_Fuck_Her house":
 		 $XS.love+=q+my.charm
 		 $XS.bad+=q
 		 '<div class="dialog_menu">'
-			 '<p>Me: Tell me the truth, when you were drunk and we did that stuff... Was that something you planned from the beginning?</p>'
-			 '<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>!❤ What ever could you be talking about? ❤Obviously, you took advantage of me while I was drunk!❤</p>'
+			 "<p>Me: Tell me the truth, when you were drunk and we did that stuff... Was that something you planned from the beginning?</p>"
+			 "<p><<$XS.name>>: ❤Mr. <<$Protagonists_surname>>!❤ What ever could you be talking about? ❤Obviously, you took advantage of me while I was drunk!❤</p>"
 		 '</div>'
 	end
  q+=1
@@ -445,23 +445,23 @@ if $args[0]="sales_Fuck_Her house2":
 
 	if a=0:
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>:❤Mr. <<$Protagonists_surname>>❤ I told you, didn't I? ❤I have even sexier lingerie!❤</p>'
-			 '<p>Me: Wow!❤</p>'
+			 "<p><<$XS.name>>:❤Mr. <<$Protagonists_surname>>❤ I told you, didn't I? ❤I have even sexier lingerie!❤</p>"
+			 "<p>Me: Wow!❤</p>"
 		 '</div>'
 	end
 
 	if a=1:
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>: I haven't been good at studying since I was a kid... ❤I only use this way to please you... ❤You won't laugh at me, will you?❤</p>'
-			 '<p>Me: I would never...</p>'
+			 "<p><<$XS.name>>: I haven't been good at studying since I was a kid... ❤I only use this way to please you... ❤You won't laugh at me, will you?❤</p>"
+			 "<p>Me: I would never...</p>"
 		 '</div>'
 	end
 
 	if 6>=a and a>=2:
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>: ❤Then please help me!❤ I don't want to stand all day long!❤ I want to ride your cock every day!❤</p>'
-			 '<p>I:......</p>'
-			 '<p><<$XS.name>>:❤Being temporary fuck buddies is also acceptable.❤<<$Panting>></p>'
+			 "<p><<$XS.name>>: ❤Then please help me!❤ I don't want to stand all day long!❤ I want to ride your cock every day!❤</p>"
+			 "<p>I:......</p>"
+			 "<p><<$XS.name>>:❤Being temporary fuck buddies is also acceptable.❤<<$Panting>></p>"
 		 '</div>'
 	end
 
@@ -470,8 +470,8 @@ if $args[0]="sales_Fuck_Her house2":
 		 $XS.love+=q+my.charm
 		 $XS.bad+=q
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>:If you understand... next time shoot your cum inside ❤Dear~❤</p>'
-			 '<p>Me: I try my best......</p>'
+			 "<p><<$XS.name>>:If you understand... next time shoot your cum inside ❤Dear~❤</p>"
+			 "<p>Me: I try my best......</p>"
 		 '</div>'
 	end
  q+=1
@@ -515,9 +515,9 @@ if $args[0]="sales_Fuck_Inside the car":
 
 	if a=0:
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>:Mr. <<$Protagonists_surname>>... ❤You're not thinking of buying another car, are you?❤</p>'
-			 '<p>Me: Depends... Will there be more special services if I come to you?</p>'
-			 '<p><<$XS.name>>: Of course. ❤Wanna try out some of those services?❤</p>'
+			 "<p><<$XS.name>>:Mr. <<$Protagonists_surname>>... ❤You're not thinking of buying another car, are you?❤</p>"
+			 "<p>Me: Depends... Will there be more special services if I come to you?</p>"
+			 "<p><<$XS.name>>: Of course. ❤Wanna try out some of those services?❤</p>"
 		 '</div>'
 	end
 
@@ -525,7 +525,7 @@ if $args[0]="sales_Fuck_Inside the car":
 
 	if 5>=a and a>=1:
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>: <<$Panting>>❤</p>'
+			 "<p><<$XS.name>>: <<$Panting>>❤</p>"
 		 '</div>'
 	end
 
@@ -534,9 +534,9 @@ if $args[0]="sales_Fuck_Inside the car":
 		 $XS.love+=q+my.charm
 		 $XS.bad+=q
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>: Did I serve you well?❤</p>'
-			 '<p>Me: Yes, very well...</p>'
-			 '<p><<$XS.name>>: Is there anything else?❤</p>'
+			 "<p><<$XS.name>>: Did I serve you well?❤</p>"
+			 "<p>Me: Yes, very well...</p>"
+			 "<p><<$XS.name>>: Is there anything else?❤</p>"
 		 '</div>'
 	end
  q+=1
@@ -583,8 +583,8 @@ if $args[0]="sales_Fuck_hotel":
 
 	if a=0:
 		 '<div class="dialog_menu">'
-			 '<p>Me: Should we need to take selfies when we arrive at the hotel?</p>'
-			 '<p><<$XS.name>>: Of course! ❤To record our sweet moments!❤</p>'
+			 "<p>Me: Should we need to take selfies when we arrive at the hotel?</p>"
+			 "<p><<$XS.name>>: Of course! ❤To record our sweet moments!❤</p>"
 		 '</div>'
 	end
 
@@ -592,14 +592,14 @@ if $args[0]="sales_Fuck_hotel":
 
 	if 2>=a and a>=1:
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>: <<$Panting2>> ❤You have to record it for me as well!❤</p>'
+			 "<p><<$XS.name>>: <<$Panting2>> ❤You have to record it for me as well!❤</p>"
 		 '</div>'
 	end
 
 
 	if 6>=a and a>=3:
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>:<<$words>>❤</p>'
+			 "<p><<$XS.name>>:<<$words>>❤</p>"
 		 '</div>'
 	end
 
@@ -607,9 +607,9 @@ if $args[0]="sales_Fuck_hotel":
 		 $XS.love+=q+my.charm
 		 $XS.bad+=q
 		 '<div class="dialog_menu">'
-			 '<p><<$XS.name>>: If I get pregnant will you marry me?❤</p>'
-			 '<p>Me: ...</p>'
-			 '<p><<$XS.name>>: Look how nervous you are!❤ It's okay if I get an abortion, as long as you give me money for it.❤</p>'
+			 "<p><<$XS.name>>: If I get pregnant will you marry me?❤</p>"
+			 "<p>Me: ...</p>"
+			 "<p><<$XS.name>>: Look how nervous you are!❤ It's okay if I get an abortion, as long as you give me money for it.❤</p>"
 		 '</div>'
 	end
  q+=1
