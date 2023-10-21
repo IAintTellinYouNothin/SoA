@@ -309,10 +309,10 @@ if $BD.available=0:
 End
 
 if $GJ.available=0:
-	$GJ.name = "Hirose Riona(Previous Year's Champion)"
+	$GJ.name = "Hirose Riona(Previous Years Champion)"
 	$GJ.love = 0
 	$GJ.bad = 0
-	$GJ.bio ="In the final of the last draft, because of strong competitors<<$SSYY.NAME>>She withdrew from the competition and became the champion, which made the outside world full of doubts about her, and she was very eager to prove herself."
+	$GJ.bio ="In the final of the last draft, because of strong competitors<<$SSYY.name>>She withdrew from the competition and became the champion, which made the outside world full of doubts about her, and she was very eager to prove herself."
 End
 
 if $GS.available=0:
